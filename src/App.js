@@ -16,7 +16,7 @@ function App() {
     const response = await api.post('repositories', {
       title: `New repo ${Date.now()}`,
       url: "https://github.com/test-repo",
-      techs: "test",
+      techs: ["ReactJS", "Node.js"],
     });
 
     const repo = response.data;
